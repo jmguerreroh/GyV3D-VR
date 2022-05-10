@@ -38,7 +38,7 @@
 
       const cameraGroup = new THREE.Group();
       cameraGroup.position.set(0, -15, 5);  // Set the initial VR Headset Position.
-      console.log(cameraGroup);
+      cameraGroup.rotation.set(1, 0, 0);
 
       //When user turn on the VR mode.
       renderer.xr.addEventListener('sessionstart', function () {
